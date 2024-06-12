@@ -1,0 +1,29 @@
+------ Desarrollo vs Infraestructura ------
+
+Desarrollo:
+    1. Se encarga de contruir software.
+    2. Mantenimiento de software.
+
+Infraestructura:
+    1. Se encarga de mantener la infraestructura (servidores, redes, etc.)
+    2. Puesta en producción de software.
+
+Principales problemas:
+    1. Aislamiento entre equipos.
+    2. Falta de comunicación ágil.
+    3. Diferentes objetivos.
+    4. Baja automatización.
+
+Conceptos:
+    * Un DevOps debe buscar trabajar como un equipo único, con objetivos comunes y comunicación fluida.
+    * Un DevOps es la unión de personas, procesos y trecnología, con el fin de proporcionar valor continua y de manera eficiente a los clientes.
+    * Link microsoft DevOps: https://azure.microsoft.com/es-es/solutions/devops/tutorial/
+
+------ Ciclo de vida de DevOps ------
+
+1. Planificación: Se definen los objetivos y se planifica el trabajo.
+2. Desarrollo: Se codifica el software.
+3. Construcción: Se compilan los artefactos, es decir, cada componente se une.
+4. Pruebas: Se realizan pruebas unitarias, de integración y de aceptación.
+5. Despliegue: Se despliega el software en un entorno de producción.
+6. Operación y monitoreo: Se monitorea el software y se realizan ajustes si es necesario.
