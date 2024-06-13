@@ -28,3 +28,31 @@ Conceptos:
 4. Pruebas: Se realizan pruebas unitarias, de integración y de aceptación.
 5. Despliegue: Se despliega el software en un entorno de producción.
 6. Operación y monitoreo: Se monitorea el software y se realizan ajustes si es necesario.
+
+------ Docker: Logs Rotation ------
+* NOTA: Para evitar que los logs de Docker crezcan de manera descontrolada, se puede configurar la rotación de logs. Puede evitar que se ocupe gran cantidad de espacio en disco.
+
+* Consiste en que Docker elimine los logs antiguos y cree nuevos logs.
+
+Link: https://docs.docker.com/config/containers/logging/json-file/
+
+1. Crear el archivo 'daemon.json'
+    * Ruta Linux: /etc/docker/daemon.json
+    * Ruta Windows: C:\ProgramData\Docker\config\daemon.json
+
+2. Agregar la configuración de rotación de logs:
+    {
+        "log-driver": "json-file",
+        "log-opts": {
+            "max-size": "10m",
+            "max-file": "3"
+        }
+    }
+
+    Donde:
+        * max-size: Tamaño máximo de cada archivo de log.
+        * max-file: Número máximo de archivos de log.
+
+3. Reiniciar Docker:
+    * Linux: sudo systemctl restart docker
+    * Windows: Reiniciar Docker Desktop
